@@ -1,0 +1,6 @@
+# Web Store submission packages
+*.zip
+
+# OS cruft
+Thumbs.db
+.DS_Store

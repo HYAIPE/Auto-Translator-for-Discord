@@ -73,6 +73,12 @@ The content script tracks each text node's original and translated value, so Rea
 - Uses the free public Google Translate endpoint; extremely heavy traffic could be temporarily rate-limited (HTTP 429). Failed messages retry automatically on the next DOM change.
 - Discord occasionally changes its internal DOM. If translations stop appearing after a Discord update, the `MESSAGE_SELECTOR` in `content.js` is the first place to look — issues and PRs welcome.
 
+## 🛠️ Troubleshooting
+
+- **Translations don't appear after installing** — refresh any Discord tabs that were already open; the content script only injects into pages loaded after the extension is enabled.
+- **Some messages stay untranslated** — they may already be detected as English, or a request hit a temporary rate limit (HTTP 429). They retry automatically on the next DOM change (scroll or a new message).
+- **Nothing translates at all after a Discord update** — Discord likely changed its chat DOM. Update the `MESSAGE_SELECTOR` in [`content.js`](content.js), or [open an issue](https://github.com/HYAIPE/Auto-Translator-for-Discord/issues).
+
 ## 🤝 Contributing
 
 Contributions are welcome! Feel free to [open an issue](https://github.com/HYAIPE/Auto-Translator-for-Discord/issues) or submit a pull request.

@@ -49,4 +49,4 @@ date.
 
 Questions or concerns: open an issue at
 <https://github.com/HYAIPE/DiscordTranslator/issues> or email
-<hyaipenft@gmail.com>.
+<hyaipe.io@gmail.com>.
